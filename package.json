@@ -1,7 +1,7 @@
 {
   "name": "atom-neardark-ui-theme",
   "theme": "ui",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A simple black and green UI-theme for Atom",
   "keywords": [
     "ui",
