@@ -1,0 +1,59 @@
+//EDITED
+// Tabs
+// -------------------
+
+// Displays selectable tabs above the editor.
+// Overrides: atom/tabs
+
+.tab-bar {
+  background-color: @exmac-tab-bar-background-color;
+  //background-color: @tab-bar-background-color;
+  //border-bottom: 1px solid @base-border-color;
+
+  .tab {
+    color: @text-color;
+    height: @exmac-tab-height;
+    line-height: @exmac-tab-height;
+    font-size: @exmac-font-size;
+    //border-right: 1px solid @tab-border-color;
+    //background-color: @tab-background-color;
+    background-color: @exmac-tab-bar-background-color;
+    &.active {
+      color: @exmac-text-color;
+      background-color: @exmac-tab-background-color-active;
+    }
+
+
+    // Modified Icon (the circle) -------------------
+    &.modified:not(:hover) .close-icon {
+      top: 50%;
+      right: @component-padding + 4px; // 4px -> half of icon size
+      margin-top: -3px;
+      border-color: @exmac-text-color;
+    }
+    &.modified:hover .close-icon {
+      color: currentColor;
+    }
+
+
+    // Close Icon (the X) -------------------
+    .close-icon:hover {
+      color: @exmac-text-color-selected;
+    }
+    &.active .close-icon:hover {
+      color: @exmac-text-color;
+    }
+
+
+    // Dragging -------------------
+    // Styles get applied while dragging a tab
+    &.is-dragging {
+      background: darken(@exmac-tab-bar-background-color, 10%);
+      border-color: transparent;
+      opacity: .5;
+      & .close-icon {
+        visibility: hidden;
+      }
+    }
+  }
+}
