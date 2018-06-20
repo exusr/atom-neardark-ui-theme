@@ -1,5 +1,5 @@
 {
-  "name": "atom-neardark-ui-theme",
+  "name": "nearblack-ui",
   "theme": "ui",
   "version": "1.0.0",
   "description": "A simple black and green UI-theme for Atom",
@@ -10,7 +10,7 @@
     "dark",
     "near"
   ],
-  "repository": "https://github.com/exusr/atom-neardark-ui-theme",
+  "repository": "https://github.com/exusr/nearblack-ui",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
